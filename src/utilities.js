@@ -1,13 +1,6 @@
 const sortData = (data) => {
   const sortData = [...data];
-  sortData.sort((a, b) => {
-    if (a.cases > b.cases) {
-      return -1;
-    } else {
-      return 1;
-    }
-  });
-  return sortData;
+  return sortData.sort((a, b) => (a.cases > b.cases ? -1 : 1));
 };
 
 export default sortData;
