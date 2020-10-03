@@ -1,24 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { MenuItem, FormControl, Select } from "@material-ui/core";
 
 function App() {
+  const [countries, setcountries] = useState([
+    "USA",
+    "UK",
+    "INDIA",
+    "BANGLADEESH",
+  ]);
+  //https://disease.sh/v3/covid-19/countries
+
+  useEffect(() => {
+ 
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app__header">
+        <h2>Covid-19 tracker</h2>
+        <FormControl className="app__dropdown">
+          <Select variant="outlined" value="abc">
+            {countries.map((country) => (
+              <MenuItem value="{country}">{country}</MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      </div>
+      {/* header */}
+      {/* title+select input dropdown field*/}
+
+      {/* InfoBoxs*/}
+      {/* InfoBoxs*/}
+      {/* InfoBoxs*/}
+
+      {/* Table->list of all country wise */}
+      {/* Graph */}
+
+      {/* Map */}
     </div>
   );
 }
