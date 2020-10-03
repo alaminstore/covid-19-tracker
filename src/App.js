@@ -9,6 +9,8 @@ import {
 } from "@material-ui/core";
 import InfoBox from "./component/InfoBox";
 import Map from "./component/Map";
+import Table from "./component/Table";
+import { sortData } from "./utilities";
 
 function App() {
   const [countries, setcountries] = useState([]);
@@ -36,7 +38,8 @@ function App() {
             name: country.country, //United States
             value: country.countryInfo.iso2, //US
           }));
-          setTableData(data);
+          let sortedData = sortData(data);
+          setTableData(sortedData);
           setcountries(countries);
         });
     };
@@ -86,7 +89,7 @@ function App() {
 
         <div className="app__starts">
           <InfoBox
-            title="Cororavieus Cases"
+            title="CoviD Cases"
             cases={countryInfo.todayCases}
             total={countryInfo.cases}
           />
@@ -107,9 +110,9 @@ function App() {
 
       <Card className="app__right">
         <CardContent>
-          <h3>Live Cases By Country</h3>
+          <h4 className="text-center">Total Cases By Country</h4>
           <Table countries={tableData} />
-          <h3>Worldwide New Cases</h3>
+          <h4>Worldwide New Cases</h4>
         </CardContent>
       </Card>
     </div>
