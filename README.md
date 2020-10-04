@@ -6,4 +6,6 @@
   --2--npm install react-chartjs-2 chart.js
 ###### Numeral
  npm i numeral
+ ###### leaflet
+ npm i react-leaflet
  
