@@ -10,6 +10,7 @@ import {
 import InfoBox from "./component/InfoBox";
 import Map from "./component/Map";
 import Table from "./component/Table";
+import LineGraph from "./component/LineGraph";
 import sortData from "./utilities";
 
 function App() {
@@ -104,15 +105,19 @@ function App() {
             total={countryInfo.deaths}
           />
         </div>
-
         <Map />
       </div>
 
       <Card className="app__right">
         <CardContent>
-          <h4 className="text-center">Total Cases By Country</h4>
+          <h6 className="text-center bg-light text-dark">
+            Total Cases By Country
+          </h6>
           <Table countries={tableData} />
-          <h4>Worldwide New Cases</h4>
+          <h6 className="text-center bg-light text-dark my-4">
+            Last 120 Days' Cases View
+          </h6>
+          <LineGraph />
         </CardContent>
       </Card>
     </div>
