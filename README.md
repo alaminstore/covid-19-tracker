@@ -7,5 +7,6 @@
 ###### Numeral
  npm i numeral
  ###### leaflet
- npm i react-leaflet
+ npm i react-leaflet <br/>
+ npm i leaflet  
  
