@@ -4,6 +4,6 @@
  npm install --save react-chartjs-2 chart.js<br> or <br>
   --1--npm install react-chartjs-2 <br>
   --2--npm install react-chartjs-2 chart.js
-#### Numeral
+###### Numeral
  npm i numeral
  
