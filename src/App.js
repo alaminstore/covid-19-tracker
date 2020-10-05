@@ -12,12 +12,19 @@ import Map from "./component/Map";
 import Table from "./component/Table";
 import LineGraph from "./component/LineGraph";
 import sortData from "./utilities";
+import "leaflet/dist/leaflet.css";
 
 function App() {
   const [countries, setcountries] = useState([]);
   const [country, setcountry] = useState("worldwide");
   const [countryInfo, setCountryInfo] = useState({});
   const [tableData, setTableData] = useState([]);
+  const [mapCenter, setMapCenter] = useState({
+    lat: 23.684994,
+    lng: 90.356331,
+  });
+  const [mapZoom, setMapZoom] = useState(6);
+  const [mapCountries, setMapCountries] = useState([]);
 
   // useEffect = run a pice of code
   // based on condition
@@ -42,6 +49,7 @@ function App() {
           let sortedData = sortData(data);
           setTableData(sortedData);
           setcountries(countries);
+          setMapCountries(data);
         });
     };
 
@@ -62,6 +70,8 @@ function App() {
         setcountry(countryCode);
         // All of the data from the country response
         setCountryInfo(data);
+        setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
+        setMapZoom(4);
       });
   };
 
@@ -105,7 +115,8 @@ function App() {
             total={countryInfo.deaths}
           />
         </div>
-        <Map />
+
+        <Map countries={mapCountries} center={mapCenter} zoom={mapZoom} />
       </div>
 
       <Card className="app__right">
