@@ -7,7 +7,7 @@ https://covid-19-7445b.web.app/
 ###### React chart js 2
  npm install --save react-chartjs-2 chart.js<br> or <br>
   --1--npm install react-chartjs-2 <br>
-  --2--npm install react-chartjs-2 chart.js
+  --2--npm install react-chartjs-2 chart.js <br>
 ###### Numeral
  npm i numeral
  ###### leaflet
