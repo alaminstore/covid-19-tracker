@@ -1,5 +1,5 @@
 ## Covid-19 Tracker
-#### Demo on firebase
+#### LIVE  on firebase
 https://covid-19-7445b.web.app/
 #### Screenshot
 <img src="https://github.com/alaminstore/covid-19-tracker/blob/main/screenshots/covid-19_by_Alamin.png">
