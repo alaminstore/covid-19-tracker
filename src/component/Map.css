@@ -8,4 +8,50 @@
 }
 .map .leaflet-container {
   height: 100%;
+  border-radius: 1px;
+}
+
+.info-flag img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.info-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #545b62;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.info-container {
+  width: 150px;
+}
+
+.info-flag {
+  height: 100px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 5px;
+}
+.leaflet-popup-content-wrapper {
+  padding: 2px !important;
+  text-align: left;
+  border-radius: 6px !important;
+}
+
+.info-confirmed,
+.info-recovered,
+.info-deaths {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.info-confirmed {
+  color: #fc6b03;
+}
+.info-recovered {
+  color: green;
+}
+.info-deaths {
+  color: #bf0202;
 }
