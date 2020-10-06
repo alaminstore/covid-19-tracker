@@ -3,7 +3,7 @@
 https://covid-19-7445b.web.app/
 #### Screenshot
 <img src="https://github.com/alaminstore/covid-19-tracker/blob/main/screenshots/covid-19_by_Alamin.png">
-<img src="https://github.com/alaminstore/covid-19-tracker/blob/main/screenshots/recovered_usa.png">
+
 ###### Utilities
 <ul>
       <li>--1--npm install react-chartjs-2</li>
