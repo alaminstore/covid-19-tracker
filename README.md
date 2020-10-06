@@ -14,3 +14,10 @@ https://covid-19-7445b.web.app/
  npm i react-leaflet <br/>
  npm i leaflet  
  
+<ul>
+      <li>--1--npm install react-chartjs-2</li>
+      <li>npm install react-chartjs-2 chart.js</li>
+      <li> npm i numeral</li>
+      <li>npm i react-leaflet</li>
+      <li>npm i leaflet </li>
+ </ul>
